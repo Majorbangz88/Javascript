@@ -8,3 +8,7 @@ function reverseArray(number) {
     }
     return newArray;
 }
+
+function reverseArrayInPlace() {
+    
+}
