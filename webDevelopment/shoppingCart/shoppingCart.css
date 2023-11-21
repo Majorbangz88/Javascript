@@ -1,0 +1,49 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    background-color: antiquewhite;
+    margin-left: 30px;
+
+}
+
+table, button {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+input {
+    width: 35px;
+}
+
+#itemPrice {
+    display: flex;
+    gap: 30px;
+    margin: 0px 0px;
+    align-self: left;
+}
+
+tr {
+    gap: 300px;
+    margin-left: 300px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./shoppingCart.css">
+    <script src="./shoppingCart.js" defer></script>
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <h1>Shopping cart</h1>
+    <table>
+      <thead>
+        <tr class="itemPrice">
+          <th>item</th>
+          <th>price</th>
+        </tr>
+      </thead>
+    </table>
+        <tr>
+          <td>
+            <input type="text" id="item" />
+          </td>
+          <td>
+            <input type="number" id="price" />
+          </td>
+        </tr>
+    <button class="green" onclick="addToShoppingCart()">Add</button>
+    <button class="red" onclick="removeFromShoppingCart()">Remove</button>
+    <button class="blue" onclick="total()">Total</button>
+  </body>
+</html>

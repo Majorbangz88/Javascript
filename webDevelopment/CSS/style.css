@@ -1,0 +1,42 @@
+/* .paragraph {
+    font-size : 15px;
+    text-align : left;
+    max-width: fit-content;
+} */
+/* nav {
+  display : flex;
+  justify-content : center;
+} */
+nav button {
+  justify-content: center;
+  padding : 5px;
+  background-color : black;
+  color : white;
+  margin-right : 5px;
+}
+/* a {
+  text-decoration : none;
+  color : inherit;
+} */
+/* button:hover {
+background-color : gray;
+color : black;
+} */
+/* h2, h3 {
+  color : black;
+} */
+.About-Me-Page {
+  padding : 40px 30px 50px 30px;
+  border-width : 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+.About-Me-Page p{
+
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.cdnfonts.com/css/inter");
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+}
+
+.big-joe {
+    width: 500px;
+    height: 620px;
+    margin: 20px;
+}
+
+.bio-section {
+
+}
+
+.profession {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    
+}
+
+.my-name {
+    font-family: Inter;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.data-list {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+hr {
+    width: 2000px;
+    height: 3px;
+    background-color: black;
+}
+
+.titles-div {
+    width: 2000px;
+
+}
+
+.titles {
+    display: flex;
+    align-self: flex-start;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.first-paragraph-div {
+    width: 2000px;
+}
+
+.first-paragraph {
+    font-family: Arial;
+    font-size: 30px;
+    align-self: flex-start;
+    margin: 20px;
+}
+
+.second-paragraph {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin: 20px;
+}
+
+.skill-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 2000px;
+    margin: 0px;
+}
+
+.skill-section {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: flex-start;
+    align-items: stretch;
+    margin: 0px;
+}
+
+.skills-department {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 2000px;
+    margin: 0px;
+}
+
+.skills-list {
+    font-family: Arial;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.skills-department-div {
+    display: flex;
+    flex-direction: column;
+}
+
