@@ -60,3 +60,25 @@ test("that element at the nth index is returned", () => {
 
     expect(list.getElementAtIndex(3)).toBe(2);
 })
+
+test("that function returns true if palindromic", () => {
+    let list = new LinkedList();
+
+    list.insertAtHead(1);
+    list.insertAtHead(2);
+    list.insertAtHead(2);
+    list.insertAtHead(1);
+
+    expect(list.isPalindrome()).toBe(true)
+})
+
+test("that function returns false if not palindromic", () => {
+    let list = new LinkedList();
+
+    list.insertAtHead(1);
+    list.insertAtHead(2);
+    list.insertAtHead(2);
+    list.insertAtHead(1);
+
+    expect(list.isPalindrome()).toBe(false)
+})

@@ -81,6 +81,10 @@ class LinkedList {
             }
             return 
         }
+
+        this.isPalindrome = () => {
+            
+        }
     }
 }
 

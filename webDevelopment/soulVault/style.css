@@ -1,0 +1,94 @@
+
+body {
+    display: flex;
+    /* background-image: url("./images/unrecognizable-woman-dress-sitting-indoors-desk-writing-journal.jpg"); */
+    background-color: rgb(255, 245, 245);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 30px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fill-div {
+    display: flex;
+}
+
+.support-img-div {
+    
+}
+
+.login-but, .signup-but {
+    /* background-color: gray; */
+    color: green;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.login-but:hover {
+    opacity: 0.65;
+}
+
+.signup-but:hover {
+    opacity: 0.65;
+}
+
+.signup-but {
+    margin-left: 25px;
+}
+
+.entry-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: row;
+}
+
+.first-write-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#soulvault {
+    margin: 0px;
+    font-family: cursive;
+    font-size: 90px;
+    font-weight: bold;
+    color: red;
+}
+
+.first-write-up > p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: black;
+    text-align: center;
+}
+
+.start-button {
+    width: 450px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    font: arial;
+    font-size: 20px;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+.start-button:hover {
+    opacity: 0.65;
+}
+
+.start-button:active {
+    opacity: 0.8;
+}
