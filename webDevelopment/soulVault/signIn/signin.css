@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 100px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: start;
+    background-color: red;
+    padding: 60px 100px;
+    box-shadow: 1000px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.sign-up {
+    color: white;
+}
+
+.username-label, .password-label {
+    color: white;
+    font-weight: bold;
+}
+
+#username, #password {
+    height: 30px;
+    width: 200px;
+}
+
+.sign-up-btn {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.sign-up-btn:hover {
+    opacity: 0.9;
+}
+
+hr {
+    width: 210px;
+}
+
+.forgot-pass-div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.forgot-pass-div > p {
+    color: white;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: -33px;
+    cursor: pointer;
+}
