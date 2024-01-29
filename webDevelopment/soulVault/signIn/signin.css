@@ -6,7 +6,7 @@ body {
     padding: 250px 100px;
 }
 
-#signup-form {
+#signin-form {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-start; */
@@ -19,7 +19,7 @@ body {
     gap: 20px;
 }
 
-.sign-up {
+.sign-in {
     color: white;
 }
 
@@ -33,7 +33,7 @@ body {
     width: 200px;
 }
 
-.sign-up-btn {
+.sign-in-btn {
     height: 30px;
     width: 100px;
     cursor: pointer;
@@ -42,7 +42,7 @@ body {
     color: black;
 }
 
-.sign-up-btn:hover {
+.sign-in-btn:hover {
     opacity: 0.9;
 }
 
@@ -62,7 +62,7 @@ hr {
     cursor: pointer;
 }
 
-.sign-in {
+.sign-up {
     background-color: transparent;
     border: none;
     color: white;

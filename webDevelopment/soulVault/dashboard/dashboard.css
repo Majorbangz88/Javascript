@@ -1,0 +1,97 @@
+.dashboard-first-section {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+}
+
+.dashboard-inner-div {
+    background-color: rgb(63, 69,79);
+    height: 987px;
+    width: 300px;
+}
+
+h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+.search-field {
+    margin-left: 20px;
+    height: 30px;
+    width: 220px;
+    border-radius: 20px;
+
+}
+
+#functionalities {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: rgb(52, 59, 71);
+    height: 50px;
+    margin-top: 5px;
+}
+
+.dashboard-texts {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-size: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    height: 50px;
+    width: 1647px;
+    gap: 730px;
+}
+
+.icons {
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#nav-icon {
+    margin: 15px;
+    cursor: pointer;
+}
+
+nav > p {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.background-img {
+    background-image: url("../images/boho-background.jpg");
+    /* background-repeat: no-repeat; */
+    width: 1647px;
+    height: 938px;
+    display: flex;
+    justify-content: center;
+    /* padding: 60px; */
+}
+
+.welcome-message-div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(63, 69,79);
+    width: 550px;
+    height: 700px;
+    margin-top: 100px;
+}
+
+.welcome-message {
+    font-size: 15px;
+    color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+}
