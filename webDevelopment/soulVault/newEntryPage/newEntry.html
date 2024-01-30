@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../newEntryPage/newEntry.css">
+</head>
+<body>
+    <div class="dashboard-first-section">
+        <div class="dashboard-inner-div">
+            <h2>Hello [username]</h2>
+            <input type="text" name="search" placeholder="search journal" class="search-field">
+            <div id="functionalities">
+                <img src="../images/Note add black.png" alt="" class="icons">
+                <p class="dashboard-texts">New entry</p>
+            </div>
+            <div id="functionalities">
+                <img src="../images/List (2) black.png" alt="" class="icons" >
+                <p class="dashboard-texts">View all entries</p>
+            </div>
+            <div id="functionalities">
+                
+                <img src="../images/update black.png" alt="" class="icons" >
+                <p class="dashboard-texts">Update entry</p>
+            </div>
+            <!-- <p><img src="../images/Share black.png" alt="" class="icons" id="add-entry">Share entry</p> -->
+            <div id="functionalities">
+                <img src="../images/Delete black.png" alt="" class="icons" >
+                <p class="dashboard-texts">Delete entry</p>
+            </div>
+            <div id="functionalities">
+                <img src="../images/Delete black.png" alt="" class="icons" id="home-icon">
+                <p class="dashboard-texts">Clear all entries</p>
+            </div>
+            
+        </div>
+        <div>
+            <nav>
+                <a href="'http://localhost:5500/webDevelopment/soulVault/index.html';"><img src="../images/Home.png" alt="" class="icons" id="nav-icon" ></a>
+                
+                <p>SoulVault</p>
+                <option value=""></option>
+            </nav>
+            <div class="background-img">
+                <form action="">
+                    <input type="text" name="entryTitle" id="entryTitle" placeholder="Entry title">
+                    <input type="date" id="entryDate" name="entryDate">
+                    <textarea type="text" id="entryText" name="entryText" placeholder="Your entry here"></textarea>
+                    <button id="save-btn">Save</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../newEntryPage/newEntry.js"></script>
+</body>
+</html>
