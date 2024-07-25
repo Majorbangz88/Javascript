@@ -3,101 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SoulVault</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <p>SoulVault</p>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-        <div>
-            <button class="login-btn">
-                <a href="./signIn/signin.html">Login</a>
-            </button>
-            <button class="signup-btn">
-                <a href="./signUp/signup.html">Sign Up</a>
-            </button>
-        </div>
-    </nav>
-    
-    <div class="entry-point">
+<nav>
+    <p>SoulVault</p>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div>
+        <button class="login-btn" onclick="openModal('signin-modal')">Login</button>
+        <button class="signup-btn" onclick="openModal('signup-modal')">Sign Up</button>
+    </div>
+</nav>
+
+<div class="entry-point">
     <div class="inner-entry-point">
         <div class="first-write-up">
             <p id="soulvault">Soulvault</p>
             <p>Your private, 100% customizable online journal. <br>
                 Always with you on your journey through life.</p>
-            <button class="start-button">
-                <a href="./signUp/signup.html">Start your free journal now</a>
-            </button>
-            
+            <button class="start-button" onclick="openModal('signup-modal')">Start your free journal now</button>
         </div>
-        <!-- <a href="./signUp/signup.html" class="start-button">Start your free journal now</a> -->
     </div>
     <div class="support-img-div">
-        <img src="images/work_station.jpg" alt="image" class="support-img">
+        <img src="images/work_station.jpg" alt="Work station" class="support-img">
     </div>
 </div>
 
 <div class="some-functionalities">
     <div class="inner-func-div-1">
         <div>
-            <h2>
-                Unlimited entries
-            </h2>
-            <p>
-                Unlike other journaling platforms, you can write as much and as often as you like, all for free.
-            </p>
+            <h2>Unlimited entries</h2>
+            <p>Unlike other journaling platforms, you can write as much and as often as you like, all for free.</p>
         </div>
         <div>
-            <h2>
-                Saves as you go
-            </h2>
-            <p>
-                Never worry about losing your work — Penzu saves as you type at your computer or on the go.
-            </p>
+            <h2>Saves as you go</h2>
+            <p>Never worry about losing your work — Penzu saves as you type at your computer or on the go.</p>
         </div>
         <div>
-            <h2>
-                Custom journals
-            </h2>
-            <p>
-                Choose different covers, backgrounds, fonts and more for each of your journals and entries.
-            </p>
+            <h2>Custom journals</h2>
+            <p>Choose different covers, backgrounds, fonts and more for each of your journals and entries.</p>
         </div>
     </div>
     <div class="inner-func-div-2">
         <div>
-            <h2>
-                So much more...
-            </h2>
-            <p>
-                Enjoy unlimited devices, encryption, tagging, search, prompts, journal and entry locking, entry sharing and more.
-            </p>
+            <h2>So much more...</h2>
+            <p>Enjoy unlimited devices, encryption, tagging, search, prompts, journal and entry locking, entry sharing and more.</p>
         </div>
         <div>
-            <h2>
-                Mobile apps
-            </h2>
-            <p>
-                You can write in your journal when not at your computer with our iOS and Android apps.
-            </p>
+            <h2>Mobile apps</h2>
+            <p>You can write in your journal when not at your computer with our iOS and Android apps.</p>
         </div>
         <div>
-            <h2>
-                Reminders
-            </h2>
-            <p>
-                Set daily, weekly or custom reminders to ensure that you never forget to write in your journal.
-            </p>
+            <h2>Reminders</h2>
+            <p>Set daily, weekly or custom reminders to ensure that you never forget to write in your journal.</p>
         </div>
     </div>
 </div>
 
-    <script src="script.js"></script>
+<div id="signin-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signin-modal')">&times;</span>
+        <form id="signin-form">
+            <h2 class="sign-in">Sign in</h2>
+            <div>
+                <p id="login-message"></p>
+                <label for="username" class="username-label">Username:</label> <br>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div>
+                <label for="password" class="password-label">Password:</label> <br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="sign-in-btn">Sign in</button>
+            <hr>
+            <div class="forgot-pass-div">
+                <p>Don't have an account?</p>
+                <button type="button" class="sign-up" onclick="openModal('signup-modal')">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+        <form id="signup-form">
+            <h2 class="sign-up">Sign up</h2>
+            <div>
+                <p id="registration-message"></p>
+                <label for="username" class="username-label">Username:</label> <br>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div>
+                <label for="password" class="password-label">Password:</label> <br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="sign-up-btn">Sign up</button>
+            <hr>
+            <div class="forgot-pass-div">
+                <p>Forgot password?</p>
+                <button type="button" class="sign-in" onclick="openModal('signin-modal')">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

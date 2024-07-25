@@ -1,130 +1,139 @@
-
+/* General Styles */
 body {
-    display: flex;
-    /* background-image: url("./images/unrecognizable-woman-dress-sitting-indoors-desk-writing-journal.jpg"); */
-    background-color: rgb(255, 245, 245);
-    /* background-repeat: no-repeat; */
-    /* background-size:cover; */
-    /* padding: 30px 100px; */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
-.fill-div {
-    /* display: flex;
-    background-color: red;
-    width: 100%; */
-    color: white;
-    
-}
-
+/* Navbar */
 nav {
-    background-color: red;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
-    padding: 15px 450px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav p {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 15px;
+    margin: 0 10px;
 }
 
-nav p {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.login-btn, .signup-btn {
-    color: white;
-    background-color: transparent;
+.login-btn, .signup-btn, .start-button {
+    background-color: #4CAF50;
     border: none;
-    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.entry-point {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    flex-direction: row; 
-    padding: 50px 0px;
-    gap: 30px;
+.login-btn:hover, .signup-btn:hover, .start-button:hover {
+    background-color: #45a049;
 }
 
-.inner-entry-point {
-    display: flex;
-    flex-direction: column; /* Change to column */
-    margin-right: 20px; /* Adjust the margin as needed */
+.start-button a {
+    color: white;
+    text-decoration: none;
 }
 
-.support-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
 }
 
-.support-img {
-    width: 450px;
-    height: 350px;
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
     border-radius: 10px;
 }
 
-.private-journal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#soulvault {
-    margin: 0px;
-    font-family: cursive;
-    font-size: 90px;
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
     font-weight: bold;
-    color: red;
 }
 
-.first-write-up > p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+.close:hover,
+.close:focus {
     color: black;
-    text-align: center;
-}
-
-.start-button {
-    width: 450px;
-    height: 50px;
-    background-color: red;
-    color: white;
-    border: 0px;
-    font: arial;
-    font-size: 20px;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.start-button:hover {
-    opacity: 0.65;
-}
-
-.start-button:active {
-    opacity: 0.8;
-}
-
-.some-functionalities {
+/* Form Styles */
+form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-.inner-func-div {
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.forgot-pass-div {
     display: flex;
     flex-direction: row;
+    gap: 8px;
+}
+
+.forgot-pass-div > p {
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.forgot-pass-div > button {
+    background-color: transparent;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
 }
