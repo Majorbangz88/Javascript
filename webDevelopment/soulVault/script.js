@@ -32,6 +32,12 @@ const getLogIn = async () => {
             console.log(jsonResponse);
             loginMessage.textContent = 'Successfully logged in.';
             loginMessage.style.color = 'green';
+
+            window.location.href='./dashboard/dashboard.html';
+
+            const username = jsonResponse.data['username'];
+            window.localStorage.setItem('username', username);
+
         } else {
             const errorMessage = await response.text();
             console.error('Error logging in:', errorMessage);
@@ -46,7 +52,8 @@ const getLogIn = async () => {
     }
 };
 
-document.getElementById('signin-form').addEventListener('submit', function(event) {
+const signInForm = document.getElementById('signin-form');
+signInForm.addEventListener('submit', function(event) {
     event.preventDefault();
     getLogIn();
 });

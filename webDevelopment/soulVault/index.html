@@ -74,14 +74,13 @@
             <div>
                 <p id="login-message"></p>
                 <label for="username" class="username-label">Username:</label> <br>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
             </div>
             <div>
                 <label for="password" class="password-label">Password:</label> <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="sign-in-btn">Sign in</button>
-            <hr>
             <div class="forgot-pass-div">
                 <p>Don't have an account?</p>
                 <button type="button" class="sign-up" onclick="openModal('signup-modal')">Sign up</button>
@@ -105,7 +104,6 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="sign-up-btn">Sign up</button>
-            <hr>
             <div class="forgot-pass-div">
                 <p>Forgot password?</p>
                 <button type="button" class="sign-in" onclick="openModal('signin-modal')">Sign in</button>
